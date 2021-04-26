@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classes</title>
+
+<style>
+
+body {
+  background-image: url('bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  font-family: candara,sans-serif
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: rgba(200,200,200,1);
+  
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: grey;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: goldenrod;
+  color: white;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.column {
+  float: left;
+  width: 40%;
+  padding: 5px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: navy;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  color: yellow;
+  cursor: pointer;
+}
+
+details > p {
+  background-color: navy;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  color: yellow;
+}
+</style>
+</head>
+
+<body>
+
+<div id="navbar" style="height:47px">
+  <a href="https://amorefitness.com.sg/"><img border="0" alt="amore fitness" src="amore.png" width="64.2" height="29.4">
+  <a href="gyms.html">Gyms</a>
+  <a class="active" href="classes.html">Classes</a>
+  <a href="about.html">About Us</a>
+  <a href="index.html">Home</a>
+</a>
+</div>
+
+<h1 id="top" style="font-size:90px;color:gold;font-weight:bold;text-align:center">amore<span style="color:khaki;"> fitness</span></h1>
+
+<div class="row">
+  <div class="column">
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/QYf_J8aTUBQ">
+</iframe>
+  </div>
+  <div class="column">
+  <p style="font-family:verdana; font-size:60px; padding-left:20px">fitness the fun way!</p>
+  </div>
+</div>
+<br>
+
+<h1><u>Classes</u></h1>
+<details>
+  <summary>KickBlitz®</summary>
+  <iframe width="500" height="250" src="https://www.youtube.com/embed/V24tz87yO0k"></iframe>
+  <p>Cardio: 5/5 | Fun: 3/5 | Tone: 5/5 | Duration: 55mins</p>
+  <p>Be more explosive and agile with this energetic fusion of kickboxing and High Intensity Interval Training (HIIT). The high-energy music will drive you through intense plyometric, aerobics and strength drills. Boost your endurance and feel powerful as this choreographed workout takes you through heart-pumping sweat-inducing total body conditioning.</p>
+</details>
+
+<details>
+  <summary>CardioLatino®</summary>
+  <iframe width="500" height="250" src="https://youtube.com/embed/QYf_J8aTUBQ"></iframe>
+  <p>Cardio: 4/5 | Fun: 5/5 | Tone: 2/5 | Duration: 55mins</p>
+  <p>Experience a cultural explosion as you discover salsa, rumba, merengue and other latin dance flavours in this innovative workout. Love dance and also looking for an intense workout to burn off those extra calories? Achieve both as you live with us in this aerobics-infused workout!</p>
+</details>
+
+<details>
+  <summary>Ultimate Interval</summary>
+  <img width="500" height="300" src="ui.webp">
+  <p>Cardio: 5/5 | Fun: 4/5 | Tone: 5/5 | Duration: 55mins</p>
+  <p>Otherwise known as High Intensity Interval Training (HIIT), this intense workout will challenge both your aerobic and anaerobic systems. High-intensity, short duration exercise intervals are interspersed with lower-intensity recovery phases to achieve that metabolic blast. Not for the faint-hearted!</p>
+</details>
+
+<details>
+  <summary>Aqua Aerobics</summary>
+  <img width="500" height="300" src="aqua.webp">
+  <p>Cardio: 3/5 | Fun: 5/5 | Tone: 4/5 | Duration: 55mins</p>
+  <p>A pool-based workout that allows you to have fun and tone up with the use of buoyant weights and noodles. Its non-impact nature makes it suitable for everyone, and you don’t need to know swimming to join us!</p>
+</details>
+
+<details>
+  <summary>Street Jazz</summary>
+  <img width="500" height="300" src="jazz.webp">
+  <p>Cardio: 2/5 | Fun: 3/5 | Tone: 2/5 | Duration: 55mins</p>
+  <p>A fusion of HipHop and Jazz techniques, this style is for the dancer who loves being sexy yet strong, and wants to portray her attitude through the dance moves. Improve your musicality and body coordination while enjoying hot sassy songs, and let the fast pace blow you away!</p>
+</details>
+
+<a href="#top" style="text-align:right">Back to Top</a>
+
+</body>
+</html>

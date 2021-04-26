@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amore Fitness</title>
+
+<style>
+
+body {
+  background-image: url('bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+  font-family: candara,sans-serif
+}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: rgba(200,200,200,1);
+  
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: grey;
+  color: white;
+}
+
+#navbar a.active {
+  background-color: goldenrod;
+  color: white;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+.container {
+	display: flex;
+	align-items: left;
+	}
+	img {
+		max-width: 100%
+		}
+      .image {
+		flex-basis: 35%
+      }
+      .text {
+        font-size: 20px;
+		color: khaki;
+        text-align: left
+      }
+
+</style>
+</head>
+
+<body>
+
+<div id="navbar" style="height:47px">
+  <a href="https://amorefitness.com.sg/"><img border="0" alt="amore fitness" src="amore.png" width="64.2" height="29.4">
+  <a href="gyms.html">Gyms</a>
+  <a href="classes.html">Classes</a>
+  <a href="about.html">About Us</a>
+  <a class="active" href="index.html">Home</a>
+</a>
+</div>
+
+<div>
+  <h1 style="font-size:90px;color:gold;font-weight:bold;text-align:center">amore<span style="color:khaki;"> fitness</span></h1>
+  <h2 style="font-family:sans-serif;font-size:35px;color:goldenrod;text-align:center">SINGAPORE'S LEADING LADIES-EXCLUSIVE FITNESS CENTRE</h2>
+  <h3 style="font-family:verdana; font-weight:bold; font-style:italic; text-align:center">Championing women's fitness and well-being for more than 30 years</h3>
+<div style="background-color:rgba(0,0,0,0.5); width:1200px; border:0px; padding:0px; margin: 20px;">
+  <h2 style="background-color:midnightblue; text-align:center; color:white; font-size:40px">THE AMORE EXPERIENCE</h1>
+  <div class="container">
+     <div class="image">
+       <img src="classes.jfif">
+     </div>
+     <div class="text">
+       <h1>Classes</h1>
+	   <p>30+ group classes from dance to yoga. Holistic fitness, the fun way.</p>
+	   <p>Enhance your workouts with a combination of exciting dance classes and relaxing yoga.</p>
+	   <p>At Amore, our passion goes beyond to bring vibrancy and wellness to everyone.</p>
+     </div>
+   </div>
+   <br>
+  <div class="container">
+     <div class="image">
+       <img src="gym.jfif">
+     </div>
+     <div class="text">
+       <h1>Gym & Personal Training</h1>
+	   <p>Worldclass training facilities, equipmentand certified personal trainers.</p>
+	   <p>Amore Fitness is a leading fitness gym in Singapore providing unique state-of-the-art gym equipment specially designed for women.</p>
+	   <p>Whether you're just starting your fitness journey or a gym junkie, we've got the facilities you need.</p>
+     </div>
+   </div>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>
